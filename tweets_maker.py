@@ -1,8 +1,10 @@
+#This program is used to generate dataset containing
+#tweets from users and save them, as well as some
+#informations such as likes and dates
+
 import re
 import configparser
 import tweepy
-import matplotlib.pyplot as plt
-import numpy as np
 import tensorflow as tf
 import pickle
 import csv
@@ -50,15 +52,14 @@ def valid_text_from_tweets(tweets):
 def load_vect_layer():
     from_disk = pickle.load(open("mymodel_soft/tv_layer.pkl", "rb"))
     new_v = tf.keras.layers.TextVectorization.from_config(from_disk['config'])
-    # You have to call `adapt` with some dummy data (BUG in Keras)
-    new_v.adapt(tf.data.Dataset.from_tensor_slices(["xyz"]))
+    #have to call adapt with some dummy data 
+    new_v.adapt(tf.data.Dataset.from_tensor_slices(["abcxyz"]))
     new_v.set_weights(from_disk['weights'])
     return new_v
 
 def model_predict_multiple(texts):   
     vect_texts = vect_layer(texts)
     return model.predict(vect_texts)
-
 
 
 vect_layer = load_vect_layer()

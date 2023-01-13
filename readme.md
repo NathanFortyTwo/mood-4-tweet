@@ -5,9 +5,11 @@ Vous trouverez le modèle de prédiction de mood dans le dossier mymodel_soft
 
 Aucun dataset n'est présent sur ce repository, 
 
+https://www.kaggle.com/code/nathanferet/tweets-good-bad pour exécuter le notebook sur kaggle
+
 Liste des fichiers : 
 
--rapport.pdf : 
+- rapport.pdf : 
 Rapport explicant la démarche du projet
 
 - kaggle.ipynb : 

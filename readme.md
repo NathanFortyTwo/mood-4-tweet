@@ -7,6 +7,9 @@ Aucun dataset n'est présent sur ce repository,
 
 Liste des fichiers : 
 
+-rapport.pdf : 
+Rapport explicant la démarche du projet
+
 - kaggle.ipynb : 
 notebook permettant la construction et la sauvegarde d'un LSTM de prédiction de l'humeur d'un tweet
 sauvegarde également séparement la couche de vectorisation dans un pickle

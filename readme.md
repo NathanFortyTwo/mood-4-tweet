@@ -1,6 +1,5 @@
 PROJET MOOD FOR TWEET
 
-Projet étudiant dans le cadre de cours à Télécom SudParis
 Vous trouverez le modèle de prédiction de mood dans le dossier mymodel_soft
 
 Aucun dataset n'est présent sur ce repository, 
